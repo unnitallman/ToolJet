@@ -1,1 +1,7 @@
 /docs
+/.git
+/frontend/assets
+/node_modules
+/public
+/frontend/node_modules
+
