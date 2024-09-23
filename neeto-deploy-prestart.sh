@@ -1,6 +1,5 @@
 #!/bin/sh
 
-echo "------> Running prestart script <------"
 echo $NEETODEPLOY_APP_DEFAULT_URL
 
 if [ $NEETODEPLOY_APP_DEFAULT_URL ]

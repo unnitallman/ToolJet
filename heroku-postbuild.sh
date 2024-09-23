@@ -1,9 +1,9 @@
 #!/bin/sh
 
-if [ $NEETODEPLOY_APP_DEFAULT_URL ]
+if [ $HEROKU_APP_NAME ]
 then
-    TOOLJET_HOST=$NEETODEPLOY_APP_DEFAULT_URL
-    TOOLJET_SERVER_URL=$NEETODEPLOY_APP_DEFAULT_URL
+    TOOLJET_HOST="https://${HEROKU_APP_NAME}.herokuapp.com"
+    TOOLJET_SERVER_URL="https://${HEROKU_APP_NAME}.herokuapp.com"
 fi
 
 npm run build && npm run deploy
